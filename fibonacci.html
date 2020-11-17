@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt("Nhập số lượng số fabinacci cần tìm")
+    let f0 = 0;
+    let f1 = 1;
+    let fn = 0;
+    let str = '0,1,'
+    for (let i = 0; i<number; i++){
+        fn = f1 + f0;
+        f0 = f1;
+        f1 = fn;
+        str += fn +',';
+    }
+    document.write(str);
+</script>
+
+</body>
+</html>

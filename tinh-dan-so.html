@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let year = +prompt("nhập số năm bạn cần ước lượng dân số:");
+    let grow;
+    let people = 10000000;
+    for(let i =0;i<year;i++){
+        grow = people*0.03;
+        people =parseInt(people*(1+0.03));
+    }
+    document.write(people);
+</script>
+</body>
+</html>

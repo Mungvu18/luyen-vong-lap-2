@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Số tiền cần tính lãi:<input type="number" id="interest">
+Số tháng cho vay: <input type="text" id="month">
+<button onclick="myFunction()">try it!</button>
+<p id="demo"></p>
+<script>
+    function myFunction() {
+        let  interset = 0;
+        let month = parseInt(document.getElementById("month").value);
+        let total = parseInt(document.getElementById("interest").value);
+            for(i=0;i<month;i++){
+            interset = total*(0.10/12)
+            total =total+ interset;
+            }
+            document.write(total + "<br>") ;
+            document.write(interset);
+            }
+</script>
+</body>
+</html>
